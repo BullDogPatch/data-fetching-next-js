@@ -3,7 +3,10 @@ import Link from 'next/link';
 const Header = () => {
   return (
     <header className='p-8 h-16 flex justify-between items-center'>
-      <h1>This is the header</h1>
+      <Link href='/'>
+        <h4>LOGO</h4>
+      </Link>
+      <h1>This is the heading</h1>
       <div>
         <Link href='/users' className='m-2 hover:underline'>
           Users

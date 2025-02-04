@@ -5,7 +5,7 @@ export const metadata = {
 
 const AboutPage = () => {
   return (
-    <div>
+    <div className='flex flex-col items-center justify-center min-h-[80vh]'>
       <p>this is the about me page.</p>
     </div>
   );
