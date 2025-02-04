@@ -1,5 +1,10 @@
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'List Users',
+  description: 'The pgae where users are listed',
+};
+
 const UsersPage = async ({ searchParams }) => {
   const query = await searchParams;
   console.log(query);

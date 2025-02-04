@@ -1,3 +1,12 @@
+export async function generateMetadata({ params }) {
+  const { id } = await params;
+  const response = await fetch(`https://dummyjson.com/users/${id}`);
+  const { firstName, lastName } = await response.json();
+  return {
+    title: `${firstName} ${lastName}`,
+  };
+}
+
 const SingleUserPage = async ({ params }) => {
   const { id } = await params;
 
