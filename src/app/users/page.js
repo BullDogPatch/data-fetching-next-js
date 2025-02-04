@@ -15,8 +15,19 @@ const UsersPage = async ({ searchParams }) => {
   return (
     <div>
       <h3>Users Page</h3>
-      <Link href='users?sort=asc'>A-Z</Link>
-      <Link href='users?sort=desc'>Z-A</Link>
+      <Link
+        href='users?sort=asc'
+        className='m-2 p-2 bg-red-500 rounded-md hover:bg-red-800
+'
+      >
+        A-Z
+      </Link>
+      <Link
+        href='users?sort=desc'
+        className='m-2 p-2 bg-red-500 rounded-md hover:bg-red-800'
+      >
+        Z-A
+      </Link>
       <ul>
         {users.map((user) => (
           <li key={user.id} className='m-3'>
